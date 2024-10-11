@@ -1,10 +1,7 @@
 @charset "UTF-8";
-/*** Import Fonts ***/
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
-/*** Variables ***/
-/* -------------------------------- 
-		General Style
--------------------------------- */
+
 html,
 body {
   font-family: "Lato", sans-serif;
@@ -49,7 +46,6 @@ p.intro-des span {
   margin: 0 auto;
 }
 
-/*** Navbar ***/
 .navbar-container {
   position: fixed;
   top: 0;
@@ -120,6 +116,16 @@ section.page-container {
   top: 30px;
 }
 
+section.ppage {
+  margin: auto;
+  width: 90%;
+  max-width: 800px;
+  height: 110vh;
+  position: relative;
+  text-align: center;
+  top: 30px;
+}
+
 #intro {
   max-width: 800px;
 }
@@ -142,7 +148,6 @@ section.page-container {
   margin-bottom: 30px;
 }
 
-/*** General Button Styles ***/
 .button-container {
   display: inline-block;
   margin: 10px 10px;
@@ -195,11 +200,6 @@ section.page-container {
   text-transform: uppercase;
 }
 
-
-/* -------------------------------- 
-			Water Fill
--------------------------------- */
-/*** Water Fill ***/
 .button-water-fill .button {
   background-position: 0 -50%;
   background-repeat: repeat-x;
@@ -229,7 +229,21 @@ section.page-container {
   border-radius: 20px;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-li{
-  list-style: none;
+ul .li {
+  background: #e7f3fe;
+  border: 1px solid #b3e5fc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+
+ul .li:hover {
+  border: 1px solid rgb(13, 184, 184);
+  background: #d0e8ff;
 }
